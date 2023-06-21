@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Task - From static HTML to a Vue Instance<< /title>
-      <link rel="stylesheet" href="styles.css" />
+  <title>Task - From static HTML to a Vue Instance</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
@@ -22,9 +22,9 @@
   <main>
     <div class="inside">
       <div class="card" id="app">
-        <h2>Welcome back <strong>John Doe</strong>!</h2>
+        <h2>Welcome back <strong>{{name}}</strong>!</h2>
         <p>
-          You logged in on 1/24/2022, 12:34:25 PM<br />
+          You logged in on {{new Date().toLocaleString(en-us)}}<br />
           We wish you a pleasant day.
         </p>
       </div>

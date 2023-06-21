@@ -1,3 +1,7 @@
 Vue.createApp({
-  data() {},
+  data() {
+    return {
+      name: "Jimmy Ng",
+    };
+  },
 }).mount("#app");
