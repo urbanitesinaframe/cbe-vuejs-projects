@@ -40,12 +40,13 @@
       <table>
         <thead>
           <tr>
-            <th>title</th>
-            <th>isbn</th>
-            <th>author</th>
-            <th>publisher</th>
-            <th>price</th>
-            <th>numPages</th>
+            <th
+              v-for="(value,head) in books[0]"
+              :key="head"
+            >
+              {{ head }}
+            </th>
+
           </tr>
         </thead>
         <tbody>
